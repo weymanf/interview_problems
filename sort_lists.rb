@@ -22,6 +22,4 @@ def combine_sorted_lists(ar1, ar2)
 
   i == ar1.length ? result_ar.concat(ar2[j...ar2.length]) : result_ar.concat(ar1[i...ar1.length])
 
-
-
 end
