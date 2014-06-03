@@ -23,8 +23,22 @@ class linklist
     
   end
 
-  def delete(nth_link_item)
+  #deletes a node with value
+  def delete(val)
+    node = @start
+    if (node.value == val) 
+    {
+      @start = node.next
+      return @start
+    }
 
+    while node.next != nil do
+      if (node.next.value == val) {
+        node.next == node.next.next
+        return @start
+      }
+      node = node.next
+    end
   end
 
 end
@@ -40,3 +54,6 @@ class link_item
 
 
 end
+
+
+
