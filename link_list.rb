@@ -27,16 +27,15 @@ class linklist
   def delete(val)
     node = @start
     if (node.value == val) 
-    {
       @start = node.next
       return @start
-    }
+    end
 
     while node.next != nil do
-      if (node.next.value == val) {
+      if (node.next.value == val) 
         node.next == node.next.next
         return @start
-      }
+      end
       node = node.next
     end
   end
