@@ -1,14 +1,14 @@
-def deep_thunder(ar)
+#finding the deepest pit
+#P Q R 
+
+
+def deepist_pit(ar)
   depth = 0
   l = nil
   q = nil
   r = nil
-  i = 0
-
+  
   ar.each_with_index do | el, i |
- 
-    
- 
  
     if (l.nil? && el < ar[i-1]) ||  el == ar[i - 1]
       l = ar[i-1]
@@ -24,9 +24,6 @@ def deep_thunder(ar)
      
         r = [ar[i], ar[i - 1]].max
    
-       
-      
-      
       depth = [depth, [ l - q, r - q].min ].max
       l = ar[i - 1]
       q = nil
@@ -36,7 +33,6 @@ def deep_thunder(ar)
 
   end
 
-  return -1 if depth == 0
-  return depth
-
+ depth == 0 ? -1 : depth
+  
 end
