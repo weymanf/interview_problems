@@ -14,7 +14,7 @@ def max_sub_sum(arr)
     if current_max < 0
       left = i + 1
       current_max = 0
-    elsif current_max > max
+    elsif current_max > max_sum
       max_sum = current_max
       l, r = left, i
     end
