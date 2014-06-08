@@ -60,7 +60,7 @@ end
 
 
 def reverse(root_node)
-  new_root = 0;
+  new_root = nil;
   while root_node do
     next_root = root_node.next
     root_node.next = new_root
