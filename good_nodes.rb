@@ -19,6 +19,7 @@ Sample Input 1:
 5
 Sample output 1:
 4
+
 Explanation:
 We have to change pointers for four nodes (node #2 to node #5) to point to node #1. Thus 4 changes are required
 Sample input 2:
@@ -46,7 +47,7 @@ end
 for i in (2...nodes_hash[0])
   if nodes_hash[i] == 1 || nodes_hash[nodes_hash[i]] == 1
     next
-  
+
 
 
 end
