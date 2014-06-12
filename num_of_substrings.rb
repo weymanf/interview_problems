@@ -17,7 +17,7 @@ Sample output:
 
 S = gets.chomp()
 
-=begin
+
 str_arr = S.split(//)
 
 #naive solution. build the substrings and count them
@@ -26,7 +26,7 @@ len = (1..str_arr.length).to_a.flat_map do |n|
       end.uniq.length
 
 print len
-=end
+
 
 
 
