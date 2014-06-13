@@ -15,27 +15,27 @@ Sample output:
 
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 
-S = gets.chomp()
-
-
-str_arr = S.split(//)
 
 #naive solution. build the substrings and count them
-len = (1..str_arr.length).to_a.flat_map do |n|
-        str_arr.each_cons(n).to_a
-      end.uniq.length
+def num_of_substrings1(str)
+  str_arr = str.split(//)
+  len = (1..str_arr.length).to_a.flat_map do |n|
+          str_arr.each_cons(n).to_a
+        end.uniq.length
+end
 
-print len
 
 
 
+def num_of_substrings2(str)
+length_of_ar = str.length
+length_of_uniq = str.uniq.length
 
-length_of_ar = S.length
-length_of_uniq = S.uniq.length
-
-#number of substrings is added 
-#minus the duplicated letters
+  #number of substrings is added 
+  #minus the duplicated letters
 len = (1..S).inject(:+) - (length_of_ar - length_of_uniq)
+end
 
 
-print "#{len}"
+
+
