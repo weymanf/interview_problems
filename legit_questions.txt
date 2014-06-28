@@ -1,0 +1,50 @@
+Interview Questions >___<
+--------------------------
+
+Javascript
+-----
+1. null vs undefined?
+
+	Null is actually an object with type Null.
+	Undefined is a variable i.e var x;
+	but never given a value
+
+2. Closure?
+
+
+
+
+
+
+SQL
+----
+Table Sales
+id - User.id - Item.id
+
+How to make a SQL query to select users that have purchased more than 5 items
+
+
+Select
+User.id
+From
+Sales
+Group By User.id
+Having Item.id > 5
+
+
+
+CSS
+----
+Position:
+
+	Absolute: 
+	Relative:
+	Fixed:
+
+
+
+
+
+
+
+
