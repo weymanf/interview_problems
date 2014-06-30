@@ -11,7 +11,8 @@ Javascript
 
 2. Closure?
 
-
+	Top level reference of vars will be accessed by inner functions. 
+	 Simply accessing variables outside of your immediate lexical scope creates a closure.
 
 
 
@@ -37,8 +38,21 @@ CSS
 ----
 Position:
 
-	Absolute: 
-	Relative:
+	Absolute: Only cares about ancestor
+		<div> parent
+			<div>1</div>
+			<div>2</div>
+			<div>absolute</div>
+		</div>
+
+			absolute go where it wants in parent div.
+
+	Relative: Stays in the workflow 
+		<div></div>
+		<div></div>
+			<div> relative</div>
+			positions would be after the 2 divs
+			left: 10em; would move it left but it will still be under the 2nd div
 	Fixed:
 
 
