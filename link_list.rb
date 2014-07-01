@@ -71,3 +71,32 @@ def reverse(root_node)
   return new_root
 
 end
+
+
+def find_nth_to_last(n, node) #node is the beginning node in the link list we want to find
+  i = 0
+  count_node = node
+  n_node = node
+
+  #move the counting node next nth number of times
+  while i < n
+    
+    if start_node == nil
+      return "n is bigger than list"
+    end
+
+    count_node = count_node.next
+    i += 1
+
+  end
+
+  #move the counting node to the end. And the N_node would have started from the beginning
+  #once count_node hits nil. We will know n_node is nth from the last
+  while count_node != nil
+    count_node = count_node.next
+    n_node = n_node.next
+
+  end
+
+  n_node
+end

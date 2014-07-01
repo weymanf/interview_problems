@@ -53,9 +53,30 @@ Position:
 			<div> relative</div>
 			positions would be after the 2 divs
 			left: 10em; would move it left but it will still be under the 2nd div
-	Fixed:
+	Fixed: Stays at the position designated. Never moves. Navbars!!
 
 
+
+
+
+
+
+Development 
+-------------------
+Agile vs Waterfall
+Waterfall - Sequential development.
+			Follows a perfect plan following 8 stages
+			Final Product visioned
+			Cannot go back a stage
+			Clients know what they're going to get
+
+Agile - Increment Approach
+		Modules are done in weekly or montly sprints
+		Project priorities are evualated
+		Simple product design
+		For Fast production
+		Developers handle changes needed to be done
+		Allows for change
 
 
 
